@@ -207,7 +207,7 @@ class BRGBLed:
             self.blue = 0.0
             self.brightness = 0.0
             self._pixel = (0,0,0,0)
-        #print ("Brightness: ", self.brightness, " Brightness bits: ", self.brightness_bits, " Red: ", self.red, " Green: ", self.green, " Blue: ", self.blue)
+        #print ("LED Brightness: ", self.brightness, " Brightness bits: ", self.brightness_bits, " Red: ", self.red, " Green: ", self.green, " Blue: ", self.blue, " Pixel: ", self._pixel)
 
     @property
     def brightness(self):
@@ -254,8 +254,18 @@ class RGBXmasTree:
         return self._pixels
 
     @pixels.setter
-    def value(self, pixels):
+    def pixels(self, pixels):
         self._pixels = pixels
+        self.refresh()
+
+    @property
+    def colour(self):
+        return (self._pixels[0].colour)
+
+    @colour.setter
+    def colour(self, value):
+        for led in range(self.length):
+            self._pixels[led].colour = value
         self.refresh()
 
     def refresh(self):

@@ -1,13 +1,12 @@
 import time
 from rgbtree import  RGBXmasTree, BRGBLed
 
-
-if __name__ == '__main__':
+def xmas_tree_colours(num):
     tree = RGBXmasTree()
 
-    for loop in range(400):
-        led_red = BRGBLed(0.5, colour='red')
-        led_green = BRGBLed(0.5, colour='green')
+    for loop in range(num):
+        led_red = BRGBLed(0.25, colour='red')
+        led_green = BRGBLed(0.25, colour='green')
 
         for led_idx in range(tree.length):
             red = (loop % 2 + led_idx) % 2
@@ -19,3 +18,6 @@ if __name__ == '__main__':
 
         time.sleep(1.0)
     tree.off()
+
+if __name__ == '__main__':
+    xmas_tree_colours(100)
