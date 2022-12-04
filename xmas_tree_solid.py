@@ -2,7 +2,7 @@ import time
 import math
 from rgbtree import  RGBXmasTree, BRGBLed
 
-def xmas_tree_pastel(num):
+def xmas_tree_solid(num):
     tree = RGBXmasTree()
 
     for loop in range(num):
@@ -18,4 +18,4 @@ def xmas_tree_pastel(num):
     tree.off()
 
 if __name__ == '__main__':
-    xmas_tree_pastel(10000)
+    xmas_tree_solid(10000)

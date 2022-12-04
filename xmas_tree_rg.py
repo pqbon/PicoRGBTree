@@ -1,7 +1,7 @@
 import time
 from rgbtree import  RGBXmasTree, BRGBLed
 
-def xmas_tree_colours(num):
+def xmas_tree_redgreen(num):
     tree = RGBXmasTree()
 
     for loop in range(num):
@@ -20,4 +20,4 @@ def xmas_tree_colours(num):
     tree.off()
 
 if __name__ == '__main__':
-    xmas_tree_colours(100)
+    xmas_tree_redgreen(100)

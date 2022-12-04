@@ -318,23 +318,6 @@ if __name__ == '__main__':
     tree = RGBXmasTree()
 
     for loop in range(400):
-        #treeled = idx
-        # tree.set_pixel((treeled + 0)% tree.length, BRGBLed(0.5, colour='white'), False)
-        # tree.set_pixel((treeled - 1)% tree.length, BRGBLed(0.25, colour='blue'), False)
-        # tree.set_pixel((treeled - 2)% tree.length, BRGBLed(0.25, colour='ivory'), False)
-        # tree.set_pixel((treeled - 3)% tree.length, BRGBLed(0.25, colour='mediumblue'), False)
-        # tree.set_pixel((treeled - 4)% tree.length, BRGBLed(0.25, colour='slategrey'), False)
-        # tree.set_pixel((treeled - 5)% tree.length, BRGBLed(0.25, colour='teal'), False)
-        # tree.set_pixel((treeled - 6)% tree.length, BRGBLed(0.0, 0.0, 0.0, 0.0))
-        
-        # tree.set_pixel((treeled + 0)% tree.length, BRGBLed(0.5, colour='red'), False)
-        # tree.set_pixel((treeled - 1)% tree.length, BRGBLed(0.25, colour='green'), False)
-        # tree.set_pixel((treeled - 2)% tree.length, BRGBLed(0.25, colour='red'), False)
-        # tree.set_pixel((treeled - 3)% tree.length, BRGBLed(0.25, colour='green'), False)
-        # tree.set_pixel((treeled - 4)% tree.length, BRGBLed(0.25, colour='red'), False)
-        # tree.set_pixel((treeled - 5)% tree.length, BRGBLed(0.25, colour='green'), False)
-        # tree.set_pixel((treeled - 6)% tree.length, BRGBLed(0.0, 0.0, 0.0, 0.0))
-
         led_red = BRGBLed(0.5, colour='red')
         led_green = BRGBLed(0.5, colour='green')
 
