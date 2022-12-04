@@ -249,6 +249,15 @@ class RGBXmasTree:
         self._pixels = [BRGBLed() for _ in range(pixels)]
         self.off()
 
+    def __len__(self):
+        return len(self._pixels)
+
+    def __getitem__(self, index):
+        return self._pixels[index]
+
+    def __iter__(self):
+        return iter(self._pixels)
+
     @property
     def pixels(self):
         return self._pixels
