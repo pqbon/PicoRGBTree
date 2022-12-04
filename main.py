@@ -7,7 +7,7 @@ from xmas_tree_random import xmas_tree_random
 
 
 if __name__ == '__main__':
-    while _ :
+    while True :
         xmas_tree_redgreen(100)
         xmas_tree_colours(100)
         xmas_tree_pastel(100)
