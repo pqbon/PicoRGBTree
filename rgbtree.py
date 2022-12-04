@@ -225,9 +225,6 @@ class BRGBLed:
     def brightness_bits(self):
         return self._brightness_
 
-    def __iter__(self):
-        return iter(self._pixel)
-
     def on(self):
         self.brightness = 0.08
         self.red = 1.0
