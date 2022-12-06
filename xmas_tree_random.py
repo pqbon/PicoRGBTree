@@ -3,7 +3,7 @@ import random
 from rgbtree import  RGBXmasTree, BRGBLed
 
 def random_color():
-    b = 0.125
+    b = (random.choice(range(100)) / 100) * 0.5
     r = random.random()
     g = random.random()
     b = random.random()

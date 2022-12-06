@@ -8,9 +8,9 @@ from xmas_tree_random import xmas_tree_random
 
 if __name__ == '__main__':
     while True :
-        xmas_tree_redgreen(100)
-        xmas_tree_colours(100)
-        xmas_tree_pastel(100)
-        xmas_tree_solid(100)
-        xmas_tree_waves(100)
-        xmas_tree_random(10000)
+        xmas_tree_redgreen(1000)
+        xmas_tree_colours(1000)
+        xmas_tree_pastel(1000)
+        xmas_tree_solid(1000)
+        xmas_tree_waves(1000)
+        xmas_tree_random(2500)
