@@ -5,14 +5,16 @@ from rgbtree import  RGBXmasTree, BRGBLed
 def xmas_tree_waves(num):
     tree = RGBXmasTree()
 
+    step_size = 360 / tree.length
+
     for loop in range(num):
         for led_idx in range(tree.length):
-            idx = (((led_idx ) % tree.length + loop) % tree.length) + 0.5
+            idx = ((led_idx + loop) % tree.length)
 
-            bright = ((math.sin(360 * idx * 9) + 1.0) * 0.5) * 0.12
-            red = (math.sin(360 * idx * 2) + 1.0) * 0.5
-            green = (math.sin(360 * idx * 3) + 1.0) * 0.5
-            blue = (math.sin(360 * idx * 4) + 1.0) * 0.5
+            bright = ((math.sin(step_size * idx * 11) + 1.0) * 0.5) * 0.125
+            red = (math.sin(step_size * idx) + 1.0) * 0.5
+            green = (math.cos(step_size * idx) + 1.0) * 0.5
+            blue = (math.tan(step_size * idx) + 1.0) * 0.5
 
             tree.set_pixel(led_idx, BRGBLed(bright, red, green, blue))
         tree.refresh()
