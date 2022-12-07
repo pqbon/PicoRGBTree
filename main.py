@@ -6,14 +6,22 @@ from xmas_tree_solid import xmas_tree_solid
 from xmas_tree_waves import xmas_tree_waves
 from xmas_tree_random import xmas_tree_random
 
+import random
 
 
 if __name__ == '__main__':
     while True :
-        xmas_tree_redgreen(1000)
-        xmas_tree_colours(1000)
-        xmas_tree_pastel(1000)
-        xmas_tree_redgreen_bright(1000)
-        xmas_tree_solid(1000)
-        xmas_tree_waves(1000)
-        xmas_tree_random(2500)
+        run_len = random.choice(range(100, 10000))
+        xmas_tree_redgreen(run_len)
+        run_len = random.choice(range(100, 10000))
+        xmas_tree_colours(run_len)
+        run_len = random.choice(range(100, 10000))
+        xmas_tree_pastel(run_len)
+        run_len = random.choice(range(100, 10000))
+        xmas_tree_redgreen_bright(run_len)
+        run_len = random.choice(range(100, 10000))
+        xmas_tree_solid(run_len)
+        run_len = random.choice(range(100, 10000))
+        xmas_tree_waves(run_len)
+        run_len = random.choice(range(100, 10000))
+        xmas_tree_random(run_len)

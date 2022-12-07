@@ -16,7 +16,7 @@ def xmas_tree_redgreen(num):
                 tree.set_pixel(led_idx, led_green, False)
         tree.refresh()
 
-        time.sleep(1.0)
+        time.sleep(0.666)
     tree.off()
 
 if __name__ == '__main__':

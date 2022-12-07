@@ -5,12 +5,12 @@ def xmas_tree_pastel(num):
     tree = RGBXmasTree()
     
     LED_list = [
-            BRGBLed(0.04, colour='honeydew'),
-            BRGBLed(0.04, colour='lime'),
-            BRGBLed(0.04, colour='orchid'),
-            BRGBLed(0.04, colour='skyblue'),
-            BRGBLed(0.04, colour='lavenderblush'),
-            BRGBLed(0.04, colour='turquoise'),
+            BRGBLed(0.235, colour='honeydew'),
+            BRGBLed(0.235, colour='peachpuff'),
+            BRGBLed(0.235, colour='orchid'),
+            BRGBLed(0.235, colour='skyblue'),
+            BRGBLed(0.235, colour='mintcream'),
+            BRGBLed(0.235, colour='turquoise'),
         ]
 
     for loop in range(num):

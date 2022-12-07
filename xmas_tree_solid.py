@@ -7,7 +7,7 @@ def xmas_tree_solid(num):
 
     for loop in range(num):
         idx = (loop % tree.length) + 0.5
-        bright = ((math.sin(360 * idx * 3) + 1.0) * 0.5) * 0.12
+        bright = ((math.sin(360 * idx * 3) + 1.0) * 0.5) * 0.125
         red = (math.sin(360 * idx * 2) + 1.0) * 0.5
         green = (math.sin(360 * idx * 7) + 1.0) * 0.5
         blue = (math.sin(360 * idx * 9) + 1.0) * 0.5
